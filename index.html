@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +15,34 @@
     <meta name="description" content="Trust Bow River Plumbing for professional plumbing solutions. Expert service, comprehensive solutions, and quality customer care.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-['Inter']">
     <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
+                <a href="https://ihmunro.github.io/trust-bow-river-plumbing-for-quality-solutions-2025-03-16-bcmhx" class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
                     Bow River Plumbing
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#services" class="text-gray-300 hover:text-white transition-colors duration-300">Services</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                    <a href="#services" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Services</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">About</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Contact</a>
                 </div>
-                <button class="md:hidden text-gray-300 hover:text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
+                <button class="mobile-menu-button md:hidden text-gray-300 hover:text-white" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#services" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">Services</a>
+                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">Benefits</a>
+                <a href="#testimonials" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">Testimonials</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">About</a>
+                <a href="#faq" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">FAQ</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">Contact</a>
             </div>
         </nav>
     </header>
@@ -33,28 +50,34 @@
     <main>
         <!-- Hero Section -->
         <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/40 to-gray-900"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1')] bg-cover bg-center"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/80 to-gray-900/90"></div>
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-32">
                 <div class="text-center max-w-4xl mx-auto">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
-                        Trust Bow River Plumbing for Quality Solutions
+                        Your Trusted Partner for Professional Plumbing Excellence
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12">
-                        Expert Plumbing Solutions, Just a Click Away
+                        Delivering Expert Solutions with 24/7 Emergency Service & 100% Satisfaction Guarantee
                     </p>
-                    <a href="#contact" class="inline-block bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                        Get Started
-                    </a>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="#contact" class="inline-block bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            Schedule Service Now
+                        </a>
+                        <a href="#services" class="inline-block bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-700">
+                            Explore Our Services
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="absolute bottom-0 w-full h-24 bg-gradient-to-t from-gray-900 to-transparent"></div>
         </section>
 
-        <!-- Features Section -->
+        <!-- Services Section -->
         <section id="services" class="py-24 bg-gray-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
-                    Comprehensive Services
+                    Professional Plumbing Services
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
@@ -63,8 +86,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Complete Plumbing Solutions</h3>
-                        <p class="text-gray-400">From repairs to installations, we handle all your plumbing needs with expertise and precision.</p>
+                        <h3 class="text-xl font-semibold mb-4">Emergency Repairs</h3>
+                        <p class="text-gray-400">24/7 emergency service for burst pipes, leaks, and urgent plumbing issues. Our expert team arrives within 60 minutes.</p>
                     </div>
                     
                     <div class="bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
@@ -73,8 +96,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Easy Scheduling</h3>
-                        <p class="text-gray-400">Book appointments quickly and easily through our streamlined contact forms.</p>
+                        <h3 class="text-xl font-semibold mb-4">Installation Services</h3>
+                        <p class="text-gray-400">Professional installation of fixtures, water heaters, and complete plumbing systems with warranty protection.</p>
                     </div>
 
                     <div class="bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
@@ -83,8 +106,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Verified Reviews</h3>
-                        <p class="text-gray-400">Read authentic customer testimonials about our quality service and reliability.</p>
+                        <h3 class="text-xl font-semibold mb-4">Maintenance Plans</h3>
+                        <p class="text-gray-400">Preventive maintenance programs to keep your plumbing system running efficiently and prevent costly repairs.</p>
                     </div>
                 </div>
             </div>
@@ -94,38 +117,133 @@
         <section id="benefits" class="py-24 bg-gray-800">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
-                    Why Choose Us
+                    The Bow River Advantage
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-duration-300">
                         <div class="bg-gray-700 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
                             <svg class="w-12 h-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Enhance Comfort</h3>
-                        <p class="text-gray-400">Experience improved home comfort with our expert plumbing solutions.</p>
+                        <h3 class="text-xl font-semibold mb-4">Licensed Professionals</h3>
+                        <p class="text-gray-400">Our team consists of fully licensed and insured plumbers with extensive training and certification.</p>
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-duration-300">
                         <div class="bg-gray-700 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
                             <svg class="w-12 h-12 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Improve Accessibility</h3>
-                        <p class="text-gray-400">24/7 emergency services and flexible scheduling for your convenience.</p>
+                        <h3 class="text-xl font-semibold mb-4">Guaranteed Satisfaction</h3>
+                        <p class="text-gray-400">100% satisfaction guarantee on all our services with transparent pricing and no hidden fees.</p>
                     </div>
 
-                    <div class="text-center">
+                    <div class="text-center transform hover:scale-105 transition-duration-300">
                         <div class="bg-gray-700 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
                             <svg class="w-12 h-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Quality Service</h3>
-                        <p class="text-gray-400">Professional, certified plumbers delivering exceptional results.</p>
+                        <h3 class="text-xl font-semibold mb-4">24/7 Availability</h3>
+                        <p class="text-gray-400">Round-the-clock emergency service with rapid response times and same-day appointments.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
+                    What Our Clients Say
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Bow River Plumbing saved us during a major pipe burst emergency. Their team arrived within 30 minutes and had everything fixed professionally. Exceptional service!"</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Sarah Johnson</p>
+                            <p>Homeowner, Calgary</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"We've been using their maintenance service for our restaurant for over 2 years. Their preventive care has saved us thousands in potential repairs. Highly recommended!"</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Michael Chen</p>
+                            <p>Restaurant Owner</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The team installed a complete plumbing system in our new office building. Professional, on-time, and within budget. Couldn't ask for better service!"</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">David Wilson</p>
+                            <p>Property Manager</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Their water heater installation service was fantastic. The technician explained everything clearly and even helped us choose the most energy-efficient model."</p>
+                        <div class="text-sm text-gray-400">
+                            <p class="font-semibold">Emma Thompson</p>
+                            <p>Residential Client</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
+                    About Bow River Plumbing
+                </h2>
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Founded in 2010, Bow River Plumbing began with a simple mission: to provide Calgary residents with reliable, professional plumbing services they could trust. What started as a small family business has grown into one of the region's most respected plumbing companies, serving thousands of satisfied customers across residential and commercial sectors.
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Our core values of integrity, excellence, and customer satisfaction drive everything we do. We believe in transparent pricing, professional expertise, and building lasting relationships with our clients. Our team of certified plumbers undergoes regular training to stay current with the latest technologies and techniques, ensuring we deliver the highest quality service possible.
+                    </p>
                 </div>
             </div>
         </section>
@@ -137,17 +255,25 @@
                     Frequently Asked Questions
                 </h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <div class="bg-gray-800 rounded-lg p-6">
-                        <h3 class="text-lg font-semibold mb-4">What services do you offer?</h3>
-                        <p class="text-gray-400">We provide comprehensive plumbing services including repairs, installations, maintenance, and emergency services.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-lg font-semibold mb-4">What areas do you service?</h3>
+                        <p class="text-gray-400">We provide comprehensive plumbing services throughout Calgary and surrounding areas, including Airdrie, Cochrane, and Okotoks. Our service area covers a 50km radius from downtown Calgary.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-lg p-6">
-                        <h3 class="text-lg font-semibold mb-4">Do you offer emergency services?</h3>
-                        <p class="text-gray-400">Yes, we provide 24/7 emergency plumbing services for urgent issues.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-lg font-semibold mb-4">How quickly can you respond to emergencies?</h3>
+                        <p class="text-gray-400">We offer 24/7 emergency service with an average response time of 60 minutes or less. Our emergency team is always ready to handle urgent plumbing issues, including burst pipes, severe leaks, and sewer backups.</p>
                     </div>
-                    <div class="bg-gray-800 rounded-lg p-6">
-                        <h3 class="text-lg font-semibold mb-4">Are your plumbers certified?</h3>
-                        <p class="text-gray-400">All our plumbers are fully licensed, insured, and certified professionals.</p>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-lg font-semibold mb-4">Do you offer warranties on your work?</h3>
+                        <p class="text-gray-400">Yes, we provide a comprehensive warranty on all our services. Labor is guaranteed for 1 year, and we honor manufacturer warranties on all parts and fixtures we install. Additionally, we offer extended warranty options for major installations.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-lg font-semibold mb-4">What payment methods do you accept?</h3>
+                        <p class="text-gray-400">We accept all major credit cards, debit cards, e-transfers, and cash. For larger projects, we also offer flexible financing options with approved credit. Commercial clients can apply for net-30 payment terms.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                        <h3 class="text-lg font-semibold mb-4">Do you provide free estimates?</h3>
+                        <p class="text-gray-400">Yes, we provide free estimates for all standard plumbing services. For complex installations or commercial projects, we offer detailed written quotes after a thorough on-site assessment. All quotes are valid for 30 days.</p>
                     </div>
                 </div>
             </div>
@@ -158,15 +284,15 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto text-center">
                     <h2 class="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
-                        Ready to Get Started?
+                        Ready for Professional Plumbing Service?
                     </h2>
-                    <p class="text-xl text-gray-400 mb-12">Contact us today for professional plumbing solutions</p>
+                    <p class="text-xl text-gray-400 mb-12">Schedule your service today and experience the Bow River difference.</p>
                     <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
                         <a href="mailto:info@bowriverplumbing.com" class="inline-block bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                            Email Us
+                            Email Us Now
                         </a>
-                        <a href="https://www.bowriverplumbing.com" class="inline-block bg-gray-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                            Visit Website
+                        <a href="tel:+1234567890" class="inline-block bg-gray-700 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                            Call (123) 456-7890
                         </a>
                     </div>
                 </div>
@@ -179,25 +305,32 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Bow River Plumbing</h3>
-                    <p class="text-gray-400">Expert plumbing solutions for your home and business.</p>
+                    <p class="text-gray-400">Your trusted partner for professional plumbing solutions since 2010.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
                         <li><a href="#services" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
                         <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <p class="text-gray-400">info@bowriverplumbing.com</p>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">info@bowriverplumbing.com</li>
+                        <li class="text-gray-400">(123) 456-7890</li>
+                        <li class="text-gray-400">Calgary, AB, Canada</li>
+                    </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://ihmunro.github.io/trust-bow-river-plumbing-for-quality-solutions-2025-03-16-bcmhx/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://ihmunro.github.io/trust-bow-river-plumbing-for-quality-solutions-2025-03-16-bcmhx/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://ihmunro.github.io/trust-bow-river-plumbing-for-quality-solutions-2025-03-16-bcmhx/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -206,5 +339,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
