@@ -1,48 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Landing Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bow River Plumbing - Expert Plumbing Solutions</title>
     <meta name="description" content="Trust Bow River Plumbing for professional plumbing solutions. Expert service, comprehensive solutions, and quality customer care.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #3B82F6 0%, #2DD4BF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .glass-effect {
+            background: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-gray-100 font-['Inter']">
-    <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+    <header class="fixed w-full glass-effect z-50 border-b border-gray-800/50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
-                <a href="https://ihmunro.github.io/trust-bow-river-plumbing-for-quality-solutions-2025-03-16-bcmhx" class="text-2xl font-bold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
+                <a href="https://ihmunro.github.io/trust-bow-river-plumbing-for-quality-solutions-2025-03-16-bcmhx" class="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300 font-['Playfair+Display']">
                     Bow River Plumbing
                 </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#services" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Services</a>
-                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Benefits</a>
-                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Testimonials</a>
-                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">About</a>
-                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300">Contact</a>
+                    <a href="#services" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300 relative group">
+                        Services
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-teal-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300 relative group">
+                        Benefits
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-teal-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300 relative group">
+                        Testimonials
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-teal-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300 relative group">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-teal-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#faq" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300 relative group">
+                        FAQ
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-teal-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
+                    <a href="#contact" class="text-gray-300 hover:text-white hover:scale-105 transition-all duration-300 relative group">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-teal-400 group-hover:w-full transition-all duration-300"></span>
+                    </a>
                 </div>
                 <button class="mobile-menu-button md:hidden text-gray-300 hover:text-white" aria-label="Toggle mobile menu">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
-            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
-                <a href="#services" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">Services</a>
-                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">Benefits</a>
-                <a href="#testimonials" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">Testimonials</a>
-                <a href="#about" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">About</a>
-                <a href="#faq" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">FAQ</a>
-                <a href="#contact" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded px-4">Contact</a>
+            <div class="mobile-menu hidden md:hidden mt-4 glass-effect rounded-lg p-4">
+                <a href="#services" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded px-4 transition-all duration-300">Services</a>
+                <a href="#benefits" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded px-4 transition-all duration-300">Benefits</a>
+                <a href="#testimonials" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded px-4 transition-all duration-300">Testimonials</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded px-4 transition-all duration-300">About</a>
+                <a href="#faq" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded px-4 transition-all duration-300">FAQ</a>
+                <a href="#contact" class="block py-2 text-gray-300 hover:text-white hover:bg-gray-700/50 rounded px-4 transition-all duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -51,20 +87,20 @@
         <!-- Hero Section -->
         <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1')] bg-cover bg-center"></div>
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/80 to-gray-900/90"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/90 via-gray-900/80 to-gray-900/90"></div>
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-32">
-                <div class="text-center max-w-4xl mx-auto">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
+                <div class="text-center max-w-4xl mx-auto animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 font-['Playfair+Display'] gradient-text">
                         Your Trusted Partner for Professional Plumbing Excellence
                     </h1>
-                    <p class="text-xl md:text-2xl text-gray-300 mb-12">
+                    <p class="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
                         Delivering Expert Solutions with 24/7 Emergency Service & 100% Satisfaction Guarantee
                     </p>
                     <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                        <a href="#contact" class="inline-block bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <a href="#contact" class="inline-block bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover-lift">
                             Schedule Service Now
                         </a>
-                        <a href="#services" class="inline-block bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-700">
+                        <a href="#services" class="inline-block glass-effect text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border border-gray-700/50 hover-lift">
                             Explore Our Services
                         </a>
                     </div>
@@ -76,38 +112,38 @@
         <!-- Services Section -->
         <section id="services" class="py-24 bg-gray-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-['Playfair+Display'] gradient-text">
                     Professional Plumbing Services
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-                        <div class="text-blue-400 mb-4">
+                    <div class="glass-effect rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
+                        <div class="text-blue-400 mb-4 transform group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Emergency Repairs</h3>
-                        <p class="text-gray-400">24/7 emergency service for burst pipes, leaks, and urgent plumbing issues. Our expert team arrives within 60 minutes.</p>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Emergency Repairs</h3>
+                        <p class="text-gray-400 leading-relaxed">24/7 emergency service for burst pipes, leaks, and urgent plumbing issues. Our expert team arrives within 60 minutes.</p>
                     </div>
                     
-                    <div class="bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-                        <div class="text-teal-400 mb-4">
+                    <div class="glass-effect rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
+                        <div class="text-teal-400 mb-4 transform group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Installation Services</h3>
-                        <p class="text-gray-400">Professional installation of fixtures, water heaters, and complete plumbing systems with warranty protection.</p>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Installation Services</h3>
+                        <p class="text-gray-400 leading-relaxed">Professional installation of fixtures, water heaters, and complete plumbing systems with warranty protection.</p>
                     </div>
 
-                    <div class="bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-                        <div class="text-blue-400 mb-4">
+                    <div class="glass-effect rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
+                        <div class="text-blue-400 mb-4 transform group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Maintenance Plans</h3>
-                        <p class="text-gray-400">Preventive maintenance programs to keep your plumbing system running efficiently and prevent costly repairs.</p>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Maintenance Plans</h3>
+                        <p class="text-gray-400 leading-relaxed">Preventive maintenance programs to keep your plumbing system running efficiently and prevent costly repairs.</p>
                     </div>
                 </div>
             </div>
@@ -116,38 +152,38 @@
         <!-- Benefits Section -->
         <section id="benefits" class="py-24 bg-gray-800">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-['Playfair+Display'] gradient-text">
                     The Bow River Advantage
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center transform hover:scale-105 transition-duration-300">
-                        <div class="bg-gray-700 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                    <div class="text-center transform hover:scale-105 transition-duration-300 group">
+                        <div class="glass-effect rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-12 h-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Licensed Professionals</h3>
-                        <p class="text-gray-400">Our team consists of fully licensed and insured plumbers with extensive training and certification.</p>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Licensed Professionals</h3>
+                        <p class="text-gray-400 leading-relaxed">Our team consists of fully licensed and insured plumbers with extensive training and certification.</p>
                     </div>
 
-                    <div class="text-center transform hover:scale-105 transition-duration-300">
-                        <div class="bg-gray-700 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                    <div class="text-center transform hover:scale-105 transition-duration-300 group">
+                        <div class="glass-effect rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-12 h-12 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Guaranteed Satisfaction</h3>
-                        <p class="text-gray-400">100% satisfaction guarantee on all our services with transparent pricing and no hidden fees.</p>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Guaranteed Satisfaction</h3>
+                        <p class="text-gray-400 leading-relaxed">100% satisfaction guarantee on all our services with transparent pricing and no hidden fees.</p>
                     </div>
 
-                    <div class="text-center transform hover:scale-105 transition-duration-300">
-                        <div class="bg-gray-700 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+                    <div class="text-center transform hover:scale-105 transition-duration-300 group">
+                        <div class="glass-effect rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
                             <svg class="w-12 h-12 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">24/7 Availability</h3>
-                        <p class="text-gray-400">Round-the-clock emergency service with rapid response times and same-day appointments.</p>
+                        <h3 class="text-xl font-semibold mb-4 text-white">24/7 Availability</h3>
+                        <p class="text-gray-400 leading-relaxed">Round-the-clock emergency service with rapid response times and same-day appointments.</p>
                     </div>
                 </div>
             </div>
@@ -156,11 +192,11 @@
         <!-- Testimonials Section -->
         <section id="testimonials" class="py-24 bg-gray-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-['Playfair+Display'] gradient-text">
                     What Our Clients Say
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <div class="glass-effect p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
                         <div class="flex items-center mb-4">
                             <div class="text-yellow-400 flex">
                                 <i class="fas fa-star"></i>
@@ -170,14 +206,19 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <p class="text-gray-300 mb-4">"Bow River Plumbing saved us during a major pipe burst emergency. Their team arrived within 30 minutes and had everything fixed professionally. Exceptional service!"</p>
-                        <div class="text-sm text-gray-400">
-                            <p class="font-semibold">Sarah Johnson</p>
-                            <p>Homeowner, Calgary</p>
+                        <p class="text-gray-300 mb-6 leading-relaxed">"Bow River Plumbing saved us during a major pipe burst emergency. Their team arrived within 30 minutes and had everything fixed professionally. Exceptional service!"</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                                SJ
+                            </div>
+                            <div>
+                                <p class="font-semibold text-white">Sarah Johnson</p>
+                                <p class="text-sm text-gray-400">Homeowner, Calgary</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <div class="glass-effect p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
                         <div class="flex items-center mb-4">
                             <div class="text-yellow-400 flex">
                                 <i class="fas fa-star"></i>
@@ -187,14 +228,19 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <p class="text-gray-300 mb-4">"We've been using their maintenance service for our restaurant for over 2 years. Their preventive care has saved us thousands in potential repairs. Highly recommended!"</p>
-                        <div class="text-sm text-gray-400">
-                            <p class="font-semibold">Michael Chen</p>
-                            <p>Restaurant Owner</p>
+                        <p class="text-gray-300 mb-6 leading-relaxed">"We've been using their maintenance service for our restaurant for over 2 years. Their preventive care has saved us thousands in potential repairs. Highly recommended!"</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                                MC
+                            </div>
+                            <div>
+                                <p class="font-semibold text-white">Michael Chen</p>
+                                <p class="text-sm text-gray-400">Restaurant Owner</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <div class="glass-effect p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
                         <div class="flex items-center mb-4">
                             <div class="text-yellow-400 flex">
                                 <i class="fas fa-star"></i>
@@ -204,14 +250,19 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <p class="text-gray-300 mb-4">"The team installed a complete plumbing system in our new office building. Professional, on-time, and within budget. Couldn't ask for better service!"</p>
-                        <div class="text-sm text-gray-400">
-                            <p class="font-semibold">David Wilson</p>
-                            <p>Property Manager</p>
+                        <p class="text-gray-300 mb-6 leading-relaxed">"The team installed a complete plumbing system in our new office building. Professional, on-time, and within budget. Couldn't ask for better service!"</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                                DW
+                            </div>
+                            <div>
+                                <p class="font-semibold text-white">David Wilson</p>
+                                <p class="text-sm text-gray-400">Property Manager</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <div class="glass-effect p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
                         <div class="flex items-center mb-4">
                             <div class="text-yellow-400 flex">
                                 <i class="fas fa-star"></i>
@@ -221,10 +272,15 @@
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <p class="text-gray-300 mb-4">"Their water heater installation service was fantastic. The technician explained everything clearly and even helped us choose the most energy-efficient model."</p>
-                        <div class="text-sm text-gray-400">
-                            <p class="font-semibold">Emma Thompson</p>
-                            <p>Residential Client</p>
+                        <p class="text-gray-300 mb-6 leading-relaxed">"Their water heater installation service was fantastic. The technician explained everything clearly and even helped us choose the most energy-efficient model."</p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                                ET
+                            </div>
+                            <div>
+                                <p class="font-semibold text-white">Emma Thompson</p>
+                                <p class="text-sm text-gray-400">Residential Client</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,16 +290,34 @@
         <!-- About Us Section -->
         <section id="about" class="py-24 bg-gray-800">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-teal-300 bg-clip-text text-transparent">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-['Playfair+Display'] gradient-text">
                     About Bow River Plumbing
                 </h2>
                 <div class="max-w-4xl mx-auto space-y-8">
-                    <p class="text-gray-300 text-lg leading-relaxed">
-                        Founded in 2010, Bow River Plumbing began with a simple mission: to provide Calgary residents with reliable, professional plumbing services they could trust. What started as a small family business has grown into one of the region's most respected plumbing companies, serving thousands of satisfied customers across residential and commercial sectors.
-                    </p>
-                    <p class="text-gray-300 text-lg leading-relaxed">
-                        Our core values of integrity, excellence, and customer satisfaction drive everything we do. We believe in transparent pricing, professional expertise, and building lasting relationships with our clients. Our team of certified plumbers undergoes regular training to stay current with the latest technologies and techniques, ensuring we deliver the highest quality service possible.
-                    </p>
+                    <div class="glass-effect p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift">
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            Founded in 2010, Bow River Plumbing began with a simple mission: to provide Calgary residents with reliable, professional plumbing services they could trust. What started as a small family business has grown into one of the region's most respected plumbing companies, serving thousands of satisfied customers across residential and commercial sectors.
+                        </p>
+                    </div>
+                    <div class="glass-effect p-8 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift">
+                        <p class="text-gray-300 text-lg leading-relaxed">
+                            Our core values of integrity, excellence, and customer satisfaction drive everything we do. We believe in transparent pricing, professional expertise, and building lasting relationships with our clients. Our team of certified plumbers undergoes regular training to stay current with the latest technologies and techniques, ensuring we deliver the highest quality service possible.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+                        <div class="glass-effect p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300 hover-lift">
+                            <div class="text-4xl font-bold text-blue-400 mb-2">13+</div>
+                            <div class="text-gray-300">Years of Experience</div>
+                        </div>
+                        <div class="glass-effect p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300 hover-lift">
+                            <div class="text-4xl font-bold text-teal-400 mb-2">1000+</div>
+                            <div class="text-gray-300">Happy Customers</div>
+                        </div>
+                        <div class="glass-effect p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300 hover-lift">
+                            <div class="text-4xl font-bold text-blue-400 mb-2">24/7</div>
+                            <div class="text-gray-300">Emergency Service</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -295,6 +369,159 @@
                             Call (123) 456-7890
                         </a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog/Resources Section -->
+        <section id="blog" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 font-['Playfair+Display'] gradient-text">
+                    Plumbing Tips & Resources
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Emergency Tips Card -->
+                    <div class="glass-effect rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1" alt="Emergency Plumbing Tips" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="text-blue-400 text-sm font-semibold">Emergency Tips</span>
+                                <span class="mx-2 text-gray-500">•</span>
+                                <span class="text-gray-400 text-sm">5 min read</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-white">What to Do in a Plumbing Emergency</h3>
+                            <p class="text-gray-400 mb-4 leading-relaxed">Learn the essential steps to take when facing a plumbing emergency, from shutting off water to calling professionals.</p>
+                            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                                Read More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Maintenance Guide Card -->
+                    <div class="glass-effect rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1" alt="Plumbing Maintenance Guide" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="text-teal-400 text-sm font-semibold">Maintenance</span>
+                                <span class="mx-2 text-gray-500">•</span>
+                                <span class="text-gray-400 text-sm">7 min read</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-white">Preventive Plumbing Maintenance Guide</h3>
+                            <p class="text-gray-400 mb-4 leading-relaxed">Discover how regular maintenance can prevent costly repairs and extend the life of your plumbing system.</p>
+                            <a href="#" class="inline-flex items-center text-teal-400 hover:text-teal-300 transition-colors duration-300">
+                                Read More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- DIY Tips Card -->
+                    <div class="glass-effect rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1" alt="DIY Plumbing Tips" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="text-blue-400 text-sm font-semibold">DIY Tips</span>
+                                <span class="mx-2 text-gray-500">•</span>
+                                <span class="text-gray-400 text-sm">6 min read</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-white">Simple DIY Plumbing Fixes</h3>
+                            <p class="text-gray-400 mb-4 leading-relaxed">Learn about common plumbing issues you can fix yourself and when to call a professional.</p>
+                            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                                Read More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Water Conservation Card -->
+                    <div class="glass-effect rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1" alt="Water Conservation Tips" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="text-teal-400 text-sm font-semibold">Conservation</span>
+                                <span class="mx-2 text-gray-500">•</span>
+                                <span class="text-gray-400 text-sm">4 min read</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-white">Water Conservation Tips</h3>
+                            <p class="text-gray-400 mb-4 leading-relaxed">Discover ways to reduce water usage and save money on your utility bills with these practical tips.</p>
+                            <a href="#" class="inline-flex items-center text-teal-400 hover:text-teal-300 transition-colors duration-300">
+                                Read More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Seasonal Guide Card -->
+                    <div class="glass-effect rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1" alt="Seasonal Plumbing Guide" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="text-blue-400 text-sm font-semibold">Seasonal Guide</span>
+                                <span class="mx-2 text-gray-500">•</span>
+                                <span class="text-gray-400 text-sm">8 min read</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-white">Seasonal Plumbing Checklist</h3>
+                            <p class="text-gray-400 mb-4 leading-relaxed">A comprehensive guide to maintaining your plumbing system throughout the changing seasons.</p>
+                            <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-300">
+                                Read More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Card -->
+                    <div class="glass-effect rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover-lift group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1" alt="Plumbing FAQ" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <span class="text-teal-400 text-sm font-semibold">FAQ</span>
+                                <span class="mx-2 text-gray-500">•</span>
+                                <span class="text-gray-400 text-sm">6 min read</span>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-white">Common Plumbing Questions</h3>
+                            <p class="text-gray-400 mb-4 leading-relaxed">Answers to frequently asked questions about plumbing services, costs, and maintenance.</p>
+                            <a href="#" class="inline-flex items-center text-teal-400 hover:text-teal-300 transition-colors duration-300">
+                                Read More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#" class="inline-block bg-gradient-to-r from-blue-500 to-teal-400 text-white font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 hover-lift">
+                        View All Articles
+                    </a>
                 </div>
             </div>
         </section>
